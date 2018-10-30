@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,40 @@
   <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
   <title>Davinci Handy</title>
 </head>
+
 <body>
-  
+  <div class="wrapper">
+    <img src="img/logo.jpg" alt="logo" id="logo">
+    <div class="navbar">
+      <a href="#home">HOME</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">OVER ONS
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+            <a href="#news">PORTFOLIO</a>
+            <a href="#news">NIEUWS</a>
+            <a href="#news">CONTACT</a>
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function (e) {
+      if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+  </script>
 </body>
+
 </html>

@@ -1,10 +1,80 @@
 * {
   font-family: 'Archivo', sans-serif;
+}
+
+#logo {
+  margin: 10px 40px;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
 }
 
-.wrapper {
-  
+.navbar {
+  overflow: hidden;
+  background-color: #222931;
+  padding: 10px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 17px 18px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn,
+.dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
 }
